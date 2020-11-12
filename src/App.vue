@@ -1,7 +1,8 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/setup">Setup</router-link>
+    <router-link to="/change">Change</router-link>
+    <router-link to="/ts">Ts</router-link>
   </div>
   <router-view />
 </template>
@@ -16,10 +17,13 @@
 }
 
 #nav {
+  display: flex;
+  justify-content: center;
   padding: 30px;
 }
 
 #nav a {
+  margin: 0 10px;
   font-weight: bold;
   color: #2c3e50;
 }
