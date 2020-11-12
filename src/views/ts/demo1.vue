@@ -1,14 +1,16 @@
 <template>
-  <div>{{ count }} {{ name }}</div>
-  <div>{{ nameCount }}</div>
+  <div>
+    <div>{{ count }}</div>
+    <div>{{ str }}</div>
+  </div>
 </template>
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'TsDemo',
+  name: 'TsDemo1',
   data() {
     return {
-      name: '' as string,
+      infoName: 'demo1' as string,
     }
   },
   setup() {
@@ -18,13 +20,11 @@ export default defineComponent({
     }
   },
   computed: {
-    nameCount(): string {
-      return this.name + this.count
+    str(): string {
+      return `name: ${this.infoName} count: ${this.count}`
     },
   },
 })
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

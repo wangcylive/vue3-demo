@@ -6,7 +6,7 @@
 <script lang="ts">
 import { h, defineComponent } from 'vue'
 export default defineComponent({
-  name: 'demo2',
+  name: 'TsDemo2',
   setup(props, context) {
     return {}
   },

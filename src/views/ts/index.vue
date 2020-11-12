@@ -13,7 +13,7 @@
     </table>
     <button @click="onAddBook">Add Book</button>
     <div>
-<!--      <ts-demo1>323232</ts-demo1>-->
+      <ts-demo1>323232</ts-demo1>
       <ts-demo2>demo2</ts-demo2>
     </div>
   </div>
@@ -34,10 +34,10 @@ interface Info {
   age: number
 }
 
-export default {
-  name: 'TsDemo1',
+export default defineComponent({
+  name: 'TsModule',
   components: {
-    // TsDemo1,
+    TsDemo1,
     TsDemo2,
   },
   setup() {
@@ -61,7 +61,7 @@ export default {
       onAddBook,
     }
   },
-}
+})
 </script>
 
 <style lang="scss"></style>
