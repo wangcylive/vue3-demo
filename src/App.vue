@@ -3,6 +3,7 @@
     <router-link to="/setup">Setup</router-link>
     <router-link to="/change">Change</router-link>
     <router-link to="/ts">Ts</router-link>
+    <router-link to="/async">Async</router-link>
   </div>
   <router-view />
 </template>

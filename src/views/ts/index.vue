@@ -22,6 +22,7 @@
 import { reactive, computed, defineComponent } from 'vue'
 import TsDemo1 from '@/views/ts/demo1.vue'
 import TsDemo2 from '@/views/ts/demo2.vue'
+import '@/views/ts/class'
 
 interface Book {
   title: string

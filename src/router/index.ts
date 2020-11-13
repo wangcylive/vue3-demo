@@ -31,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Ts',
     component: () => import('@/views/ts/index.vue'),
   },
+  {
+    path: '/async',
+    name: 'Async',
+    component: () => import('@/views/async-component/index.vue'),
+  },
 ]
 
 const router = createRouter({
